@@ -3,8 +3,9 @@ import java.util.Collections;
 import io.restassured.RestAssured;
 
 public class API_CRUD_Test {
-
-	public static void main(String[] args) {
+@Test
+	void testFirstMissingNumber()
+	{
 		int[] arr = {4,2,1,6,8,71};
 		Arrays.sort(arr);
 		int count=0;
@@ -24,5 +25,5 @@ public class API_CRUD_Test {
 				}			
 		}
 		System.out.println("First missing number is:"+ j);
-	}
+	}	
 }
